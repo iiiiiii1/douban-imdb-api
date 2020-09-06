@@ -7,7 +7,7 @@ douban-imdb-api
 ### 接口地址
 
     #后面的23333为豆瓣电影/电视剧id
-    https://www.querydata.org/api/movie?id=23333
+    GET https://www.querydata.org/api/movie?id=23333
 
 ### 接口演示
 
