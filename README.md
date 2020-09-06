@@ -11,7 +11,7 @@ douban-imdb-api
 
 ### 接口演示
 
-    #以下影视连接为https://movie.douban.com/subject/25907124
+    #请求地址，以下影视连接为https://movie.douban.com/subject/25907124
     https://www.querydata.org/api/movie?id=25907124
     
     #请求结果
