@@ -4,9 +4,14 @@ douban-imdb-api
 
 使用示例
 ----
+### 接口地址
 
+    #后面的111111为豆瓣电影/电视剧id
+    https://www.querydata.org/api/movie?id=111111
 
-    #api接口请求示例，id为豆瓣电影/电视剧id，以下影视连接https://movie.douban.com/subject/25907124
+### 接口演示
+
+    #以下影视连接为https://movie.douban.com/subject/25907124
     https://www.querydata.org/api/movie?id=25907124
     
     #请求结果
