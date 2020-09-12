@@ -38,6 +38,7 @@ douban-imdb-api
 
 #### 数据接口
 
+    #请求方式
     GET https://movie.querydata.org/api?id=1302425
     
     #请求结果
@@ -411,6 +412,7 @@ douban-imdb-api
 
 #### 图片接口
 
+    #请求方式
     GET https://movie.querydata.org/api/generateimage?id=1302425
     
     #请求结果
@@ -427,4 +429,4 @@ douban-imdb-api
  - 如果有部分`id`获取不到信息，可随时留言，并附上相关`id`。
 
 
-  [1]: https://movie.querydata.org/img/generateimage2.png
+  [1]: https://movie.querydata.org/img/generateimage_api.png
