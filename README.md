@@ -427,4 +427,4 @@ douban-imdb-api
  - 如果有部分`id`获取不到信息，可随时留言，并附上相关`id`。
 
 
-  [1]: https://movie.querydata.org/img/generateimage1.png
+  [1]: https://movie.querydata.org/img/generateimage2.png
