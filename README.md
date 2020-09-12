@@ -1,17 +1,44 @@
+
 douban-imdb-api
 ---------------
-一个基于豆瓣、`IMDB`、烂番茄评分的电影/电视剧双语(中英)数据`api`接口，根据豆瓣电影/电视剧`id`，可直接获取其主演、导演、类型、编剧、评分、海报等全部中英文数据。
+本项目是一个基于豆瓣、`IMDB`、烂番茄评分的电影/电视剧双语(中英)数据`api`接口，目前分为数据接口和图片接口。
 
-使用示例
+## 数据接口
+
+根据豆瓣电影/电视剧`id`，可直接获取其主演、导演、类型、编剧、评分、海报等全部中英文数据，适合用于各种影视相关需求的开发调用。
+
+## 图片接口
+
+根据豆瓣电影/电视剧`id`，可直接获取其主演、导演、类型、编剧、评分、海报等全部中英文数据，并智能算出海报突出的颜色作为背景，结合海报一起合成影视数据展示图片，适合用于各种自媒体发帖，公众号发帖贴图使用，非常美观。
+
+![中文展示][1]
+![英文展示][2]
+
+接口地址
 ----
-### 接口地址
+
+## 数据接口
 
     #后面的23333为豆瓣电影/电视剧id
     https://movie.querydata.org/api?id=23333
 
-### 接口演示
+该接口直接会返回中英文信息。
 
-    #请求示例
+## 图片接口
+
+    #中文接口，后面的23333为豆瓣电影/电视剧id
+    https://movie.querydata.org/api/generateimage?id=23333&lang=Cn
+
+    #英文接口，后面的23333为豆瓣电影/电视剧id
+    https://movie.querydata.org/api/generateimage?id=23333&lang=En
+
+该接口直接会返回对应的中英文信息展示图片，且`lang`为选填，不填默认返回中文信息。
+
+请求示例
+----
+
+## 数据接口
+
     GET https://movie.querydata.org/api?id=1302425
     
     #请求结果
@@ -383,7 +410,23 @@ douban-imdb-api
         ]
     }
 
+## 图片接口
+
+    GET https://movie.querydata.org/api/generateimage?id=1302425
+    
+    #请求结果
+    {
+        "success": 1,
+        "image": "https://image.querydata.org/movie/poster/1599842781369-5f54ecc0fc1f587649984f63.png"
+    }
+
+获取后，直接下载该图片地址即可。
+
 相关说明
 ----
  - 本接口为公益项目，只为方便广大有需求的大佬们，后期该接口功能也会越来越多。
  - 如果有部分`id`获取不到信息，可随时留言，并附上相关`id`。
+
+
+  [1]: https://movie.querydata.org/img/generateimage(1).png
+  [2]: https://movie.querydata.org/img/generateimage(2).png
