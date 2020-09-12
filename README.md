@@ -25,11 +25,14 @@ douban-imdb-api
 
 #### 图片接口
 
+    注意：此功能使用chrome无头浏览器技术生成，第一次获取耗时较长，请耐心等待，请勿连续请求，15S内仅能请求一次。
+
     #中文接口，后面的23333为豆瓣电影/电视剧id
     https://movie.querydata.org/api/generateimage?id=23333&lang=Cn
 
     #英文接口，后面的23333为豆瓣电影/电视剧id
     https://movie.querydata.org/api/generateimage?id=23333&lang=En
+
 
 该接口直接会返回对应的中英文信息展示图片，且`lang`为选填，不填默认返回中文信息。
 
