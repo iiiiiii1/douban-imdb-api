@@ -11,8 +11,7 @@ douban-imdb-api
 
 根据豆瓣电影/电视剧`id`，可直接获取其主演、导演、类型、编剧、评分、海报等全部中英文数据，并智能算出海报突出的颜色作为背景，结合海报一起合成影视数据展示图片，适合用于各种自媒体发帖，公众号发帖贴图使用，非常美观。
 
-![中文][1]
-![英文][2]
+![展示图][1]
 
 接口地址
 ----
@@ -428,5 +427,4 @@ douban-imdb-api
  - 如果有部分`id`获取不到信息，可随时留言，并附上相关`id`。
 
 
-  [1]: https://movie.querydata.org/img/generateimage(1).png
-  [2]: https://movie.querydata.org/img/generateimage(2).png
+  [1]: https://movie.querydata.org/img/generateimage.png
