@@ -27,6 +27,7 @@ douban-imdb-api
 
     注意：此功能使用chrome无头浏览器技术生成，第一次获取耗时较长，请耐心等待，请勿连续请求，15S内仅能请求一次。
 
+
     #中文接口，后面的23333为豆瓣电影/电视剧id
     https://movie.querydata.org/api/generateimage?id=23333&lang=Cn
 
