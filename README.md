@@ -19,7 +19,7 @@ douban-imdb-api
 相关项目
 ----
 
-图片鉴黄接口：https://github.com/iiiiiii1/checkimage 可判断各种类型的色情值。
+图片鉴黄接口：https://github.com/iiiiiii1/checkimage 可判断各种类型图片的色情值。
 
 更新日志
 ----
