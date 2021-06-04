@@ -21,6 +21,8 @@ douban-imdb-api
 
 图片鉴黄接口：https://github.com/iiiiiii1/checkimage 可判断各种类型图片的色情值。
 
+磁力接口：https://github.com/iiiiiii1/magnet-vip 可自动将磁力链接转换成种子文件提供下载，并返回磁力和磁力对应的种子的详细信息，包含文件列表信息、大小和`hashInfo`。
+
 更新日志
 ----
 
