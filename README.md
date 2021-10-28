@@ -26,7 +26,7 @@ douban-imdb-api
 
 #### 2021.10.28
 
- - 重写api，新增根据名称模糊查询、imdbId、doubanId查询及近30个api。
+ - 重写api，新增根据原标题+别名+剧情+多语言标题综合模糊全文搜索（根据匹配分数排序）、imdbId、doubanId查询及近30个api。
 
 #### 2020.10.24
 
