@@ -23,6 +23,9 @@ douban-imdb-api
 
 更新日志
 ----
+#### 2021.11.05
+- 新增TOP250接口，支持IMDB和douban两种类型TOP250，支持语言选择、分页。
+- 修复了IMDBID和doubanID对应问题。
 
 #### 2021.10.28
 
@@ -46,7 +49,7 @@ douban-imdb-api
 接口使用
 ----
 
-    #根据豆瓣id查询数据，doubanid为id
+    #根据豆瓣id查询数据，doubanid为id，若数据库没有数据则会从维基百科等接口获取数据。
     https://api.wmdb.tv/movie/api?id=doubanid
 
     #支持id、imdbId、doubanId，至少需要传递其中一个
@@ -55,6 +58,10 @@ douban-imdb-api
     
     #全文模糊搜索，根据匹配分数排序
     https://api.wmdb.tv/api/v1/movie/search?q=英雄本色
+    
+    #TOP250接口
+    https://api.wmdb.tv/api/v1/top?type=Imdb&skip=0&limit=50&lang=Cn
+    type为必填，可选Douban或Imdb，skip和limit为分页使用，lang调用指定语言的数据，支持Cn或者En
 
 该api为测试阶段，如果没有数据，可将片名或者豆瓣ID、imdbid整理之后发送至1219330@qq.com，这边会处理！
 
