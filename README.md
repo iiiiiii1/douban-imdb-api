@@ -67,7 +67,7 @@ douban-imdb-api
     https://api.wmdb.tv/api/v1/top?type=Imdb&skip=0&limit=50&lang=Cn
     type为必填，可选Douban或Imdb，skip和limit为分页使用，lang调用指定语言的数据，支持Cn或者En
 
-该api为测试阶段，如果没有数据，可将片名或者豆瓣ID、imdbid整理之后发送至1219330@qq.com，这边会处理！
+该api为测试阶段，如果全文搜索没有数据的，可使用/movie/api接口，根据豆瓣id查询数据。
 
 相关项目
 ----
