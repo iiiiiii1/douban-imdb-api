@@ -23,6 +23,9 @@ douban-imdb-api
 
 更新日志
 ----
+#### 2021.11.06
+- 全文搜索接口新增了更多参数，可以更精准的获取到想要的数据！新增了limit,skip,lang,year参数，具体使用请查看接口使用。
+
 #### 2021.11.05
 - 新增TOP250接口，支持IMDB和douban两种类型TOP250，支持语言选择、分页。
 - 修复了IMDBID和doubanID对应问题。
@@ -57,7 +60,8 @@ douban-imdb-api
     https://api.wmdb.tv/api/v1/movie?doubanId=1302425
     
     #全文模糊搜索，根据匹配分数排序
-    https://api.wmdb.tv/api/v1/movie/search?q=英雄本色
+    https://api.wmdb.tv/api/v1/movie/search?q=英雄本色&limit=10&skip=0&lang=Cn&year=2002
+    q为必填，其他为选填，limit和skip用于分页，lang用于返回指定语言的查询数据，支持Cn或者En，year支持限定年份，例如q=英雄&year=2002，则只会返回张艺谋导演、李连杰主演的那一部英雄，可用于各种使用片名+年份精准获取数据的场景！
     
     #TOP250接口
     https://api.wmdb.tv/api/v1/top?type=Imdb&skip=0&limit=50&lang=Cn
