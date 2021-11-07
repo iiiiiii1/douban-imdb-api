@@ -42,7 +42,7 @@ douban-imdb-api
 接口使用
 ----
 
-    #根据豆瓣id查询数据，doubanid为id，若数据库没有数据则会从维基百科等接口获取数据。
+    #根据豆瓣id查询数据，doubanid为id，若数据库没有数据则会从维基百科等接口获取数据。doubanUrl/subject/1428581/ 最后数字1428581为doubanid
     https://api.wmdb.tv/movie/api?id=doubanid
 
     #支持id、imdbId、doubanId，至少需要传递其中一个
