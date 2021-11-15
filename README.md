@@ -13,6 +13,10 @@ douban-imdb-api
 
 更新日志
 ----
+#### 2021.11.15
+- 新增前端使用API的案例页面，方便大家整合API进自己的项目中！页面地址https://api.wmdb.tv/testapi .
+- 最近发现有人恶意请求页面，现添加请求限制，ip开头183.95.*.* 的朋友自己注意了！
+
 #### 2021.11.06
 - 全文搜索接口新增了更多参数，可以更精准的获取到想要的数据！新增了limit,skip,lang,year参数，具体使用请查看接口使用。
 
@@ -41,6 +45,8 @@ douban-imdb-api
 
 接口使用
 ----
+    #网页中使用API获取数据的案例网页：
+    https://api.wmdb.tv/testapi 可根据代码自行整合API至自己的网站中！
 
     #根据豆瓣id查询数据，doubanid为id，若数据库没有数据则会从维基百科等接口获取数据。doubanUrl/subject/1428581/ 最后数字1428581为doubanid
     https://api.wmdb.tv/movie/api?id=doubanid
