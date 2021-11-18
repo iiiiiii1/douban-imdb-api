@@ -65,6 +65,8 @@ douban-imdb-api
     #自媒体/微博/网页引用分享等专用图片生成接口
     https://api.wmdb.tv/movie/api/generateimage?doubanId=1306123&lang=En
     doubanId是必填项，lang可选En或者Cn，分别对应英文版和中文版
+    返回为json：{"image":"https://image.querydata.org/movie/poster/1637210344774-5fa652fb0cea9b0e1eba060a.png","success":1}
+    image就是生成的分享图片！
 
     #支持id、imdbId、doubanId，至少需要传递其中一个
     https://api.wmdb.tv/api/v1/movie?imdbId=tt6264654
