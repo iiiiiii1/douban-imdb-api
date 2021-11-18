@@ -9,10 +9,18 @@ douban-imdb-api
 
 由于旧接口数据越来越多，性能受到少许影响，目前整体全部重写，读取速度从原来几百毫秒降低至30MS，支持名称模糊查询、imdbId、doubanId查询及近30个api，目前暂时放出少许接口，其它会慢慢测试并逐步开放。
 
-对于旧接口，数据获取接口已替换成新数据库接口，用法一样，图片获取接口下架，旧api：[查看地址](/old-api.md)。
+对于旧接口，数据获取接口已替换成新数据库接口，用法一样，旧api：[查看地址](/old-api.md)。
+
+## 自媒体专用图片生成：
+![1637210006558-5fa652fb0cea9b0e1eba060a](https://user-images.githubusercontent.com/20472717/142352696-321b3f2c-cf04-408e-b9e9-9be47e67a24f.png)
+![1637210344774-5fa652fb0cea9b0e1eba060a](https://user-images.githubusercontent.com/20472717/142352851-f1a89dbb-7dbd-425e-8b80-33c86ffdb3bf.png)
+
 
 更新日志
 ----
+#### 2021.11.18
+- 图片生成接口全新上线，重新构建代码，效率更高！使用方式请查看接口使用！
+
 #### 2021.11.15紧急处理
 - 居然有人将此接口当做爬取商用数据的手段，现直接关闭/api/v1/movie接口！后续开放APIKEY申请！
 
@@ -53,6 +61,10 @@ douban-imdb-api
 
     #根据豆瓣id查询数据，doubanid为id，若数据库没有数据则会从维基百科等接口获取数据。doubanUrl/subject/1428581/ 最后数字1428581为doubanid
     https://api.wmdb.tv/movie/api?id=doubanid
+    
+    #自媒体/微博/网页引用分享等专用图片生成接口
+    https://api.wmdb.tv/movie/api/generateimage?doubanId=1306123&lang=En
+    doubanId是必填项，lang可选En或者Cn，分别对应英文版和中文版
 
     #支持id、imdbId、doubanId，至少需要传递其中一个
     https://api.wmdb.tv/api/v1/movie?imdbId=tt6264654
