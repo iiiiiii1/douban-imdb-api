@@ -15,6 +15,11 @@ douban-imdb-api
 ![1637210006558-5fa652fb0cea9b0e1eba060a](https://user-images.githubusercontent.com/20472717/142352696-321b3f2c-cf04-408e-b9e9-9be47e67a24f.png)
 ![1637210344774-5fa652fb0cea9b0e1eba060a](https://user-images.githubusercontent.com/20472717/142352851-f1a89dbb-7dbd-425e-8b80-33c86ffdb3bf.png)
 
+相关提示
+----
+由于海报链接被很多人直接拿到其它站点引用，导致每日消耗几百G流量，服务器有点扛不住，现在增加了防盗链，建议大家获取相关信息后，直接将海报图片下载到本地使用。
+
+对于流量不大，且自身服务器带宽有限，提供不了图片访问的，可将域名发送到邮箱1219330@qq.com，我会将其加入到白名单，防止触发防盗链系统，使其正常调用图片。
 
 更新日志
 ----
