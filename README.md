@@ -23,6 +23,9 @@ douban-imdb-api
 
 更新日志
 ----
+#### 2021.11.25
+- 新增图片处理服务API，方便大家更智能的调用图片，详情可查看接口使用！
+
 #### 2021.11.18
 - 图片生成接口全新上线，重新构建代码，效率更高！使用方式请查看接口使用！
 
@@ -58,6 +61,13 @@ douban-imdb-api
 
 接口使用
 ----
+    #很多朋友直接调用image.querydata.org的图片，不仅给服务器造成巨大流量浪费，而且网页加载也非常慢，所以我特意做了一个图片云处理服务器，方便大家直接通过API调用海报
+    https://imageserver.querydata.org/api?url=https://image.querydata.org/movie/poster/no-poster.jpg&width=200&format=webp
+    #本源码已开源，可在相关项目中看见github地址，也可直接使用我们搭建好的服务。
+    #url为海报地址，已经做了白名单，仅支持image.querydata.org中的图片处理。
+    #width和height参数至少需要存在一个，当仅存在其中一个时，则会保留图片宽高比自动处理！
+    #format支持jpg、png和webp，推荐使用webp，程序会判断浏览器是否支持webp，支持webp返回webp，不支持返回jpg！webp加载实在太快了！
+    
     #网页中使用API获取数据的案例网页：
     https://api.wmdb.tv/testapi 可根据代码自行整合API至自己的网站中！
 
@@ -86,6 +96,7 @@ douban-imdb-api
 
 相关项目
 ----
+图片云处理服务器：[查看地址](https://github.com/bookyo/image-server-node) 可云处理图片成各种大小各种格式图片，带缓存，带自动删除冷门图片。
 
 图片鉴黄接口：[查看地址](https://github.com/iiiiiii1/checkimage) 可判断各种类型图片的色情值。
 
