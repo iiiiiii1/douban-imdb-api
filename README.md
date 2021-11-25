@@ -17,10 +17,19 @@ douban-imdb-api
 
 相关提示
 ----
-由于海报链接被很多人直接拿到其它站点引用，导致每日消耗几百G流量，服务器有点扛不住，现在增加了防盗链，建议大家获取相关信息后，直接将海报图片下载到本地使用。
+很多朋友直接调用image.querydata.org的图片，不仅给服务器造成巨大流量浪费，而且网页加载也非常慢，所以我特意做了一个图片云处理服务器，方便大家直接通过API调用海报。
 
-对于流量不大，且自身服务器带宽有限，提供不了图片访问的，可将域名发送到邮箱1219330@qq.com，我会将其加入到白名单，防止触发防盗链系统，使其正常调用图片。
+#### 调用示例
 
+    https://imageserver.querydata.org/api?url=https://image.querydata.org/movie/poster/no-poster.jpg&width=200&format=webp
+    
+    #参数详解
+    url为海报地址，已经做了白名单，仅支持image.querydata.org中的图片处理。
+    width和height参数为海报长宽，至少需要存在一个，当仅存在其中一个时，则会保留图片宽高比自动处理！
+    format为返回类型，支持jpg、png和webp，推荐使用webp，程序会判断浏览器是否支持webp，支持webp返回webp，不支持返回jpg！webp加载实在太快了！
+
+本源码已开源，可在下方相关项目中看见github地址，也可直接使用我们搭建好的服务。
+    
 更新日志
 ----
 #### 2021.11.25
@@ -61,12 +70,6 @@ douban-imdb-api
 
 接口使用
 ----
-    #很多朋友直接调用image.querydata.org的图片，不仅给服务器造成巨大流量浪费，而且网页加载也非常慢，所以我特意做了一个图片云处理服务器，方便大家直接通过API调用海报
-    https://imageserver.querydata.org/api?url=https://image.querydata.org/movie/poster/no-poster.jpg&width=200&format=webp
-    #本源码已开源，可在相关项目中看见github地址，也可直接使用我们搭建好的服务。
-    #url为海报地址，已经做了白名单，仅支持image.querydata.org中的图片处理。
-    #width和height参数至少需要存在一个，当仅存在其中一个时，则会保留图片宽高比自动处理！
-    #format支持jpg、png和webp，推荐使用webp，程序会判断浏览器是否支持webp，支持webp返回webp，不支持返回jpg！webp加载实在太快了！
     
     #网页中使用API获取数据的案例网页：
     https://api.wmdb.tv/testapi 可根据代码自行整合API至自己的网站中！
