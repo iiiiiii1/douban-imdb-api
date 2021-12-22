@@ -34,6 +34,9 @@ douban-imdb-api
     
 更新日志
 ----
+#### 2021.12.22
+- 修复生成自媒体分享图片的BUG，现在返回和生成都正常了！
+
 #### 2021.11.25
 - 新增图片处理服务API，方便大家更智能的调用图片，详情可查看接口使用！
 
@@ -82,7 +85,7 @@ douban-imdb-api
     #自媒体/微博/网页引用分享等专用图片生成接口
     https://api.wmdb.tv/movie/api/generateimage?doubanId=1306123&lang=En
     doubanId是必填项，lang可选En或者Cn，分别对应英文版和中文版
-    返回为json：{"image":"https://image.querydata.org/movie/poster/1637210344774-5fa652fb0cea9b0e1eba060a.png","success":1}
+    返回为json：{"image":"https://wmdb.querydata.org/movie/poster/1637210344774-5fa652fb0cea9b0e1eba060a.png","success":1}
     image就是生成的分享图片！
 
     #支持id、imdbId、doubanId，至少需要传递其中一个
