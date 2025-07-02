@@ -105,7 +105,9 @@ douban-imdb-api
 ## 赞助支持
 本项目 CDN 加速及安全防护由 [Tencent EdgeOne](https://edgeone.ai/zh?from=github) 赞助
 
-[![EdgeOne Logo](https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png)](https://edgeone.ai/zh?from=github)
+[<img src="https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png" width="200" alt="EdgeOne Logo">](https://edgeone.ai/zh?from=github)
+
+➡️ 官网链接：[https://edgeone.ai/zh](https://edgeone.ai/zh?from=github)
 
 相关项目
 ----
