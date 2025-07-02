@@ -102,6 +102,11 @@ douban-imdb-api
 
 该api为测试阶段，如果全文搜索没有数据的，可使用/movie/api接口，根据豆瓣id查询数据。
 
+## 赞助支持
+本项目 CDN 加速及安全防护由 [Tencent EdgeOne](https://edgeone.ai/zh?from=github) 赞助
+
+[![EdgeOne Logo](https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png)](https://edgeone.ai/zh?from=github)
+
 相关项目
 ----
 图片云处理服务器：[查看地址](https://github.com/bookyo/image-server-node) 可云处理图片成各种大小各种格式图片，带缓存，带自动删除冷门图片。
