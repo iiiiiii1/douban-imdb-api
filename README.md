@@ -13,7 +13,7 @@ douban-imdb-api
     #根据豆瓣id查询数据，doubanid为id，若数据库没有数据则会从维基百科等接口获取数据。doubanUrl/subject/1428581/ 最后数字1428581为doubanid
     https://api.wmdb.tv/movie/api?id=doubanid
     
-    #q为电影/电视剧标题、actor为主演、year为年份、limit和skip用于分；q和actor必须存在一个，且都支持模糊搜索，其它参数为选填，可结合更多参数进行精准查找。
+    #q为电影/电视剧标题、actor为主演、year为年份、limit和skip用于分页；q和actor必须存在一个，且都支持模糊搜索，其它参数为选填，可结合更多参数进行精准查找。
     https://api.wmdb.tv/api/v1/movie/search?q=英雄本色&actor=周润发&year=1986&limit=10&skip=0&lang=Cn
     
 该api为测试阶段，如果全文搜索没有数据的，可使用/movie/api接口，根据豆瓣id查询数据。
